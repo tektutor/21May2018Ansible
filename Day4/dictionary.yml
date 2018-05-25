@@ -1,0 +1,10 @@
+- name: Demonstrates ansible dictionary usage in playbooks
+  hosts: localhost
+  vars_files:
+    - mycontacts
+  tasks:
+    - name: Print the contact details
+      debug: 
+        msg: "Mobile number of {{item.value.name}} is {{item.value.mobile}}"
+        verbosity: 2
+      with_dict: "{{contacts}}"

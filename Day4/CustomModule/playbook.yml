@@ -1,0 +1,9 @@
+- name: This playbook uses our custom ansible module
+  hosts: all 
+  tasks:
+   - name: Invoke our ansible custom module
+     add: firstInput=1000  secondInput=2000
+     register: output
+
+   - name: Print the result
+     debug: var=output

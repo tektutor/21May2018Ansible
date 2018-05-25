@@ -1,0 +1,7 @@
+- name: Install nginx on docker containers
+  hosts: all
+  become: yes
+
+  tasks:
+   - name: Install nginx web server 
+     apt: name=nginx state=latest update_cache=yes

@@ -1,0 +1,5 @@
+- name: This play will demonstrate the use of ping module
+  hosts: all
+  tasks:
+    - name: Ping the docker container
+      ping: 

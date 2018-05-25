@@ -1,0 +1,4 @@
+software_packages:
+  - tree
+  - vim
+  - net-tools

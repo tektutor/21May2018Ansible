@@ -1,0 +1,89 @@
+ansible 2.5.3
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.12 (default, Nov 20 2017, 18:23:56) [GCC 5.4.0 20160609]
+Using /etc/ansible/ansible.cfg as config file
+setting up inventory plugins
+Parsed /root/Ansible/Day2/StaticInventory/hosts inventory source with ini plugin
+Loading callback plugin minimal of type stdout, v2.0 from /usr/lib/python2.7/dist-packages/ansible/plugins/callback/minimal.pyc
+META: ran handlers
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/basic.py
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/_text.py
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/parsing/convert_bool.py
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/parsing/__init__.py
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/pycompat24.py
+Using module_utils file /usr/lib/python2.7/dist-packages/ansible/module_utils/six/__init__.py
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> (0, '/root\n', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941 `" && echo ansible-tmp-1526980464.5-178285761075941="` echo /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941 `" ) && sleep 0'"'"''
+<localhost> (0, 'ansible-tmp-1526980464.5-178285761075941=/root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941\n', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+<localhost> PUT /root/.ansible/tmp/ansible-local-64060BWyfbs/tmpHWt16Y TO /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ping.py
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC sftp -b - -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 '[localhost]'
+<localhost> (0, 'sftp> put /root/.ansible/tmp/ansible-local-64060BWyfbs/tmpHWt16Y /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ping.py\n', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug2: Remote version: 3\r\ndebug2: Server supports extension "posix-rename@openssh.com" revision 1\r\ndebug2: Server supports extension "statvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "fstatvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "hardlink@openssh.com" revision 1\r\ndebug2: Server supports extension "fsync@openssh.com" revision 1\r\ndebug3: Sent message fd 5 T:16 I:1\r\ndebug3: SSH_FXP_REALPATH . -> /root size 0\r\ndebug3: Looking up /root/.ansible/tmp/ansible-local-64060BWyfbs/tmpHWt16Y\r\ndebug3: Sent message fd 5 T:17 I:2\r\ndebug3: Received stat reply T:101 I:2\r\ndebug1: Couldn\'t stat remote file: No such file or directory\r\ndebug3: Sent message SSH2_FXP_OPEN I:3 P:/root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ping.py\r\ndebug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 4 32768 bytes at 0\r\ndebug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:31988\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 5 31988 bytes at 32768\r\ndebug3: Sent message SSH2_FXP_CLOSE I:4\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ping.py && sleep 0'"'"''
+<localhost> (0, '', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ping.py && sleep 0'"'"''
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\nShared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: ansible.cfg set ssh_args: (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s)
+<localhost> SSH: ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=2000)
+<localhost> SSH: ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set: (-o)(IdentityFile="/root/.ssh/id_rsa")
+<localhost> SSH: ansible_password/ansible_ssh_pass not set: (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+<localhost> SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u set: (-o)(User=root)
+<localhost> SSH: ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10)
+<localhost> SSH: found only ControlPersist; added ControlPath: (-o)(ControlPath=/root/.ansible/cp/9003983df8)
+<localhost> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2000 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/9003983df8 localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1526980464.5-178285761075941/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '', 'OpenSSH_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 19: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 63914\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+server1 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+META: ran handlers
+META: ran handlers

@@ -1,0 +1,9 @@
+- name: List files and directories
+  hosts: all
+  tasks:
+    - name: List directory
+      shell: ls -lR 
+      register: output
+
+    - name: Print the output of previous task
+      debug: var=output

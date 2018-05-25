@@ -1,0 +1,35 @@
+
+PLAY [Install, Configure and Deploy web page into nginx web server] ************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [server1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 2000: Connection refused\r\n", "unreachable": true}
+ok: [server2]
+
+TASK [Install nginx web server] ************************************************
+ok: [server2]
+
+TASK [Configure nginx web root folder] *****************************************
+ok: [server2]
+
+TASK [Create the new nginx web root folder] ************************************
+ [WARNING]: Consider using the file module with state=directory rather than
+running mkdir.  If you need to use command because file is insufficient you can
+add warn=False to this command task or set command_warnings=False in
+ansible.cfg to get rid of this message.
+changed: [server2]
+
+TASK [Restart the nginx web server] ********************************************
+ [WARNING]: Consider using the service module rather than running service.  If
+you need to use command because service is insufficient you can add warn=False
+to this command task or set command_warnings=False in ansible.cfg to get rid of
+this message.
+changed: [server2]
+
+TASK [Deploy a web page into nginx web server] *********************************
+ok: [server2]
+	to retry, use: --limit @/root/Ansible/Day3/installnginx.retry
+
+PLAY RECAP *********************************************************************
+server1                    : ok=0    changed=0    unreachable=1    failed=0   
+server2                    : ok=6    changed=2    unreachable=0    failed=0   
+

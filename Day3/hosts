@@ -1,0 +1,18 @@
+[all]
+server1 ansible_port=2001
+server2 ansible_port=2002   
+server3 ansible_port=3001   
+server4 ansible_port=3002   
+
+[all:vars]
+ansible_host=localhost
+ansible_private_key_file=/root/.ssh/id_rsa
+ansible_user=root
+ansible_become_user=root
+ansible_become_password=root
+
+[ubuntu]
+server[1:2]
+
+[centos]
+server[3:4]

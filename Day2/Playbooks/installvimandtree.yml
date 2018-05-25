@@ -1,0 +1,10 @@
+- name: This playbook will install vim and tree utils
+  hosts: server1 
+  become: yes
+
+  tasks: 
+   - name: Install vim utility
+     apt: name=vim state=present update_cache=yes 
+
+   - name: Install tree utility
+     apt: name=tree state=latest update_cache=yes

@@ -1,0 +1,8 @@
+[all]
+server[1:4]
+
+[ubuntu]
+server[1:2]
+
+[centos]
+server[3:4]

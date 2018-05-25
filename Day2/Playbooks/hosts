@@ -1,0 +1,16 @@
+[all]
+server1 ansible_port=2000
+server2 ansible_port=2001   
+
+[all:vars]
+ansible_host=localhost
+ansible_private_key_file=/root/.ssh/id_rsa
+ansible_user=root
+ansible_become_user=root
+ansible_become_password=root
+
+[dev-servers]
+server1
+
+[qa-servers]
+server2
